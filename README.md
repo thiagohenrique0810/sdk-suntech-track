@@ -25,9 +25,9 @@ Obs: Antes de começar a consumir o webservice é necessario solicitar ao suport
 Link: http://ap1.stc.srv.br/docs
 
 Se for usar integração do ap2 (admin) usar:
-Usuário: callcenter
-Senha: callcenter
+- Usuário: callcenter
+- Senha: callcenter
 
 Se for usar integração do ap3 (webcliente) usar:
-Usuário: webservice
-Senha: webservice
+- Usuário: webservice
+- Senha: webservice
