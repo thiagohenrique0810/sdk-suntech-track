@@ -18,7 +18,7 @@ class Device {
 
 	}
 
-	public function list()
+	public function listAll()
 	{
 
 	}

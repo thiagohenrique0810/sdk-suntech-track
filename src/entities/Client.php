@@ -1,10 +1,6 @@
 <?php
 
-require_once 'Contact.php';
-require_once 'LgwFunc.php';
-require_once 'Vehicle.php';
-
-class Client extends LgwFunc, Contact {
+class Client {
 
 	/**
 	* atributos de classes herdadas
@@ -46,7 +42,7 @@ class Client extends LgwFunc, Contact {
 
 	}
 
-	public function list()
+	public function listAll()
 	{
 		
 	}

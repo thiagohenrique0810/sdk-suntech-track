@@ -43,7 +43,7 @@ class Vehicle {
 
     }
 
-    public function list()
+    public function listAll()
     {
         
     }
