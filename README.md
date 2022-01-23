@@ -30,7 +30,8 @@ Se for usar integração do ap3 (webcliente) usar:
 - __Usuário:__ webservice
 - __Senha:__ webservice
 
-Referencias:
+
+##Referencias:
 
 [Documentação da api](http://ap1.stc.srv.br/docs)
 
