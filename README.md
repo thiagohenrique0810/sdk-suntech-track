@@ -1,7 +1,7 @@
-# sdk-suntech-track - STC Tecnologia
+# sdk-suntech-track 
 
 
-Biblioteca de integração da plataforma de gestão de rastreamento Suntech do Brasil Webcliente e Admin feita em PHP.
+Biblioteca de integração da plataforma de gestão de rastreamento Suntech do Brasil (STC - Tecnologia), Webcliente e Admin feita em PHP.
 
 ## Modulos Admin
 * CLIENTES
