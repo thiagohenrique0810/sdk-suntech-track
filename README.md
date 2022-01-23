@@ -30,5 +30,5 @@ Se for usar integração do ap3 (webcliente) usar:
 - Usuário: webservice
 - Senha: webservice
 
-Documentação: http://ap1.stc.srv.br/docs
-Referencias: https://www.stdobrasil.com.br/
+- Documentação: http://ap1.stc.srv.br/docs
+- Referencias: https://www.stdobrasil.com.br/
