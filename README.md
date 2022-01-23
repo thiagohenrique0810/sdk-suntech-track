@@ -22,8 +22,6 @@ Biblioteca de integração da plataforma de gestão de rastreamento Suntech do B
 
 Obs: Antes de começar a consumir o webservice é necessario solicitar ao suporte da suntech a API KEY.
 
-Link: http://ap1.stc.srv.br/docs
-
 Se for usar integração do ap2 (admin) usar:
 - Usuário: callcenter
 - Senha: callcenter
@@ -31,3 +29,6 @@ Se for usar integração do ap2 (admin) usar:
 Se for usar integração do ap3 (webcliente) usar:
 - Usuário: webservice
 - Senha: webservice
+
+Documentação: http://ap1.stc.srv.br/docs
+Referencias: https://www.stdobrasil.com.br/
