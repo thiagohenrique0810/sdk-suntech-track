@@ -32,4 +32,5 @@ Se for usar integração do ap3 (webcliente) usar:
 
 Referencias:
 [Documentação da api](http://ap1.stc.srv.br/docs)
+
 [Site da suntech brasil - STC](https://www.stdobrasil.com.br/)
