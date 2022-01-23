@@ -1,29 +1,33 @@
 <?php
 
 
-class Manufacture {
-	
-	private $manufacture;
+class Type {
+
+	private $id;
 	private $name;
 	
-	
+
+	public function listtype()
+	{
+
+	}
 
     /**
      * @return mixed
      */
-    public function getManufacture()
+    public function getId()
     {
-        return $this->manufacture;
+        return $this->id;
     }
 
     /**
-     * @param mixed $manufacture
+     * @param mixed $id
      *
      * @return self
      */
-    public function setManufacture($manufacture)
+    public function setId($id)
     {
-        $this->manufacture = $manufacture;
+        $this->id = $id;
 
         return $this;
     }
