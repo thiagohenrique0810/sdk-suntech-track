@@ -35,4 +35,4 @@ Se for usar integração do ap3 (webcliente) usar:
 
 [Documentação da API](http://ap1.stc.srv.br/docs)
 
-[Site da suntech Brasil - STC](https://www.stdobrasil.com.br/)
+[Site da Suntech Brasil - STC](https://www.stdobrasil.com.br/)
