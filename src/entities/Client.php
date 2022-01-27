@@ -1,6 +1,17 @@
 <?php
 
-class Client {
+require_once 'src/Factory.php';
+
+class Client extends Factory {
+
+    private $uri;
+    private $key;
+
+    public function __construct($options, $uri)
+    {
+        $this->uri = $uri;
+        $this->key = $options['key'];
+    }
 
 	/**
 	* atributos de classes herdadas
@@ -42,9 +53,13 @@ class Client {
 
 	}
 
-	public function listAll()
+	public function listAll($page = '', $cpfcnpj = '')
 	{
-		
+		return $this->sendRequest($this->uri . 'client/list', [
+            'key' => $this->key,
+            'page' => $page,
+            'cpfcnpj' => $cpfcnpj
+        ]);
 	}
 
     /**
