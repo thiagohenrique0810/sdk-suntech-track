@@ -3,14 +3,12 @@
 
 Biblioteca de integração da plataforma de gestão de rastreamento Suntech do Brasil (STC - Tecnologia), Webcliente e Admin feita em PHP.
 
-## Modulos Admin
-* CLIENTES
-* VEÍCULOS
-* DISPOSITIVOS 
-* FABRICANTES
+## Modulos
 
-## Modulos Webclient
-
+* Clientes
+* Veículos
+* Dispositivos 
+* Fabricantes
 * Veículos última posição
 * Eventos em aberto
 * Histórico Posições
