@@ -24,32 +24,46 @@ class AbstractStc {
 		}
 	}
 
-	public function listbrand()
+	public function listbrand($data)
 	{
 
 	}
 
-	public function addbrand() 
+	public function addbrand($data) 
 	{
 
 	}
 
-	public function removebrand()
+	public function removebrand($data)
 	{
 
 	}
 
 	public function addClient($data) 
 	{
+		if(!empty($data)) {
+			//die($this->key);
+	        return sendRequest(array_merge($data, [
 
+	        	'key' => $this->getKey()
+
+	        ]), $this->getUri() . 'client/add');
+    	}
 	}
 
-	public function updateClient() 
+	public function updateClient($data) 
 	{
+		if(!empty($data)) {
+			//die($this->key);
+	        return sendRequest(array_merge($data, [
 
+	        	'key' => $this->getKey()
+
+	        ]), $this->getUri() . 'client/update');
+    	}
 	}
 
-	public function removeClient()
+	public function removeClient($data)
 	{
 
 	}
@@ -60,85 +74,83 @@ class AbstractStc {
 			//die($this->key);
 	        return sendRequest([
 
-	        	'key' => $this->key,
+	        	'key' => $this->getKey(),
 	        	'page' => $data['page'],
 	        	'cpfcnpj' => $data['cpfcnpj']
 
-	        ], $this->uri . 'client/list');
+	        ], $this->getUri() . 'client/list');
     	}
 	}
 
-	public function addContact() 
+	public function addContact($data) 
 	{
 
 	}
 
-	public function updateContact() 
+	public function updateContact($data) 
 	{
 
 	}
 
-	public function removeContact()
+	public function removeContact($data)
 	{
 
 	}
 
-	public function addDevice() 
+	public function addDevice($data) 
 	{
 
 	}
 
-	public function listAllDevice()
+	public function listAllDevice($data)
 	{
 
 	}
 
-	public function listmanagerDevice()
+	public function listmanagerDevice($data)
 	{
 
 	}
 
-	public function associateDevice()
+	public function associateDevice($data)
 	{
 
 	}
 
-	public function updateLogin() 
+	public function updateLogin($data) 
 	{
 		
 	}
 
-	public function changeonwerVehicle() 
+	public function changeonwerVehicle($data) 
     {
 
     }
 
-    public function addVehicle() 
+    public function addVehicle($data) 
     {
 
     }
 
-    public function updateVehicle() 
+    public function updateVehicle($data) 
     {
 
     }
 
-    public function removeVehicle()
+    public function removeVehicle($data)
     {
 
     }
 
-    public function listAllVehicle()
+    public function listAllVehicle($data)
     {
         
     }
 
-    public function listtype()
+    public function listtype($data)
 	{
 
 	}
-
-
 
     /**
      * @return mixed

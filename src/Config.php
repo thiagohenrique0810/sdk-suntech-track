@@ -33,8 +33,8 @@ function sendRequest($data, $urlRequest)
     curl_close($curl);
 
     if ($err) {
-      echo "cURL Error #:" . $err;
+      return json_decode($err);
     } else {
-      echo $response;
+      return json_decode($response);
     }
 }
