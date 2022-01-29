@@ -208,7 +208,7 @@ class AbstractStc {
 			//die($this->key);
 	        return sendRequest(array_merge($data, [
 	        	'key' => $this->getKey()
-	        ]), $this->getUri() . 'client/changeonwer');
+	        ]), $this->getUri() . 'vehicle/changeonwer');
     	}
     }
 
@@ -279,14 +279,32 @@ class AbstractStc {
     	}
 	}
 
-	public function listManufactures($data)
+	public function lastPositionDevice($data)
 	{
 		if(!empty($data)) {
 			//die($this->key);
 	        return sendRequest(array_merge($data, [
 	        	'key' => $this->getKey()
-	        ]), $this->getUri() . 'manufacture/list');
+	        ]), $this->getUri() . 'getClientVehicles');
     	}
+	}
+
+	public function sendCommands($data)
+	{
+		if(!empty($data)) {
+			//die($this->key);
+	        return sendRequest(array_merge($data, [
+	        	'key' => $this->getKey()
+	        ]), $this->getUri() . 'sendCommands');
+    	}
+	}
+
+	public function listManufactures()
+	{
+		//die($this->key);
+        return sendRequest([
+        	'key' => $this->getKey()
+        ], $this->getUri() . 'manufacture/list');
 	}
 
     /**

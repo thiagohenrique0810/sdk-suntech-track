@@ -16,6 +16,7 @@ $options = [
 $suntech = new SuntechAPI($options);
 
 $data = [
+    'id' => '74',
 	"clientId" => "108",
     "lisencePlate" => "asd8521",
     "manufacture" => "st",
@@ -36,6 +37,6 @@ $data = [
     "cpf" => "3255416852"
 ];
 
-print_r($suntech->addVehicle($data));
+print_r($suntech->updateVehicle($data));
 
 
