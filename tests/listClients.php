@@ -17,6 +17,7 @@ $suntech = new SuntechAPI($options);
 
 $data = [
 	'cpfcnpj' => '01748225000193',
+	'page' 	=> '1'
 ];
 
 print_r($suntech->listAllClient($data));

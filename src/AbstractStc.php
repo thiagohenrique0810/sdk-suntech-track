@@ -24,14 +24,12 @@ class AbstractStc {
 		}
 	}
 
-	public function listbrand($data)
+	public function listbrand()
 	{
-		if(!empty($data)) {
-			//die($this->key);
-	        return sendRequest(array_merge($data, [
-	        	'key' => $this->getKey()
-	        ]), $this->getUri() . 'vehicles/listbrand');
-    	}
+		//die($this->key);
+        return sendRequest([
+        	'key' => $this->getKey()
+        ], $this->getUri() . 'vehicles/listbrand');
 	}
 
 	public function addbrand($data) 
@@ -254,14 +252,11 @@ class AbstractStc {
     	}
     }
 
-    public function listVehicleType($data)
+    public function listVehicleType()
 	{
-		if(!empty($data)) {
-			//die($this->key);
-	        return sendRequest(array_merge($data, [
-	        	'key' => $this->getKey()
-	        ]), $this->getUri() . 'vehicle/listtype');
-    	}
+        return sendRequest([
+        	'key' => $this->getKey()
+        ], $this->getUri() . 'vehicle/listtype');
 	}
 
 	public function listCities($data)

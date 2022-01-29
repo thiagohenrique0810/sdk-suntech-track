@@ -16,9 +16,16 @@ $options = [
 $suntech = new SuntechAPI($options);
 
 $data = [
-	'id' => '4',
+	"clientId" => 4,
+	"contacts" => array([
+		"name" => "Conatato",
+		"phone1" => "23423",
+		"phone2" => "342324",
+		"phone3" => "4444",
+		"phone4" => "222222"
+	])
 ];
 
-print_r($suntech->removeClient($data));
+print_r($suntech->addContact($data));
 
 

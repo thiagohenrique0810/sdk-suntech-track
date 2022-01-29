@@ -16,17 +16,9 @@ $options = [
 $suntech = new SuntechAPI($options);
 
 $data = [
-	"clientId" => 4,
-	"contacts" => array([
-		"id" => 8,
-		"name" => "Conatato",
-		"phone1" => "23423",
-		"phone2" => "342324",
-		"phone3" => "4444",
-		"phone4" => "222222"
-	])
+	"brandId" => '358',
 ];
 
-print_r($suntech->updateContact($data));
+print_r($suntech->removeBrand($data));
 
 

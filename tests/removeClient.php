@@ -16,7 +16,7 @@ $options = [
 $suntech = new SuntechAPI($options);
 
 $data = [
-	'id' => '4',
+	'id' => '84',
 ];
 
 print_r($suntech->removeClient($data));

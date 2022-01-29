@@ -15,11 +15,6 @@ $options = [
 
 $suntech = new SuntechAPI($options);
 
-$data = [
-	"clientId" => 4,
-	"contactId" => 8
-];
-
-print_r($suntech->removeContact($data));
+print_r($suntech->listVehicleType());
 
 

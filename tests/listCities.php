@@ -16,9 +16,9 @@ $options = [
 $suntech = new SuntechAPI($options);
 
 $data = [
-	'id' => '4',
+	'state' => 'PE',
 ];
 
-print_r($suntech->removeClient($data));
+print_r($suntech->listCities($data));
 
 

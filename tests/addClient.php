@@ -16,7 +16,7 @@ $options = [
 $suntech = new SuntechAPI($options);
 
 $data = [
-	"cpfcnpj" 		=> "123456789",
+	"cpfcnpj" 		=> "09191332402",
 	"name" 			=> "Fulano de tal caike",
 	"email" 		=> "fulano@stctecnologia.com.br",
 	"status"		=> "1",
@@ -28,7 +28,7 @@ $data = [
 	"neighbourhood"	=> "Centro",
 	"complement"	=> "apartamento 11",
 	"info"			=> "Observações do cliente",
-	"login"			=> "fulano45",
+	"login"			=> "fasdfasdf4df8",
 	"pass"			=> "895416"
 ];
 

@@ -16,17 +16,10 @@ $options = [
 $suntech = new SuntechAPI($options);
 
 $data = [
-	"clientId" => 4,
-	"contacts" => array([
-		"id" => 8,
-		"name" => "Conatato",
-		"phone1" => "23423",
-		"phone2" => "342324",
-		"phone3" => "4444",
-		"phone4" => "222222"
-	])
+	"brandId" => "1",
+	"model" => "Tiger 800"
 ];
 
-print_r($suntech->updateContact($data));
+print_r($suntech->addModel($data));
 
 
