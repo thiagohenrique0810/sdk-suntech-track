@@ -49,6 +49,7 @@ class AbstractStc {
 
 	public function listAllClient($page = '', $cpfcnpj = '')
 	{
+		die($this->uri);
         return sendRequest([
 
         	'key' => $this->key,
