@@ -15,7 +15,10 @@ $options = [
 
 $suntech = new SuntechAPI($options);
 
+$data = [
+	'cpfcnpj' => ''
+];
 
-print_r($suntech->listAllClient());
+print_r($suntech->listAllClient($data));
 
 

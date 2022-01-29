@@ -15,6 +15,13 @@ class AbstractStc {
 		}else {
 			$this->setUri('http://ap3.stc.srv.br/integration/prod/ws/');
 		}
+
+		//verificando se foi enviada a chave de integracao
+		if(!empty($options['key'])) {
+			$this->key = $options['key'];
+		}else {
+			die('missing integration key');
+		}
 	}
 
 	public function listbrand()
@@ -47,16 +54,18 @@ class AbstractStc {
 
 	}
 
-	public function listAllClient($page = '', $cpfcnpj = '')
+	public function listAllClient($data)
 	{
-		die($this->uri);
-        return sendRequest([
+		if(!empty($data)) {
+			//die($this->key);
+	        return sendRequest([
 
-        	'key' => $this->key,
-        	'page' => $page,
-        	'cpfcnpj' => $cpfcnpj
+	        	'key' => $this->key,
+	        	'page' => $data['page'],
+	        	'cpfcnpj' => $data['cpfcnpj']
 
-        ], $this->uri . 'client/list');
+	        ], $this->uri . 'client/list');
+    	}
 	}
 
 	public function addContact() 
