@@ -1,18 +1,11 @@
 <?php
 
+require_once 'src/AbstractStc.php';
 
-include_once 'src/Stc.php';
-require_once 'src/entities/Client.php';
+class SuntechAPI extends AbstractStc {
 
-class SuntechAPI {
-
-	public $stc;
-
-	public function __construct($options) 
+	public function __construct() 
 	{
-		//criando objeto stc
-		$this->stc = new Stc($options);
 	}
-	
 
 }

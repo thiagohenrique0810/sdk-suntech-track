@@ -5,7 +5,7 @@
 
 
 //incluindo lib
-include_once 'SuntechAPI.php';
+include_once '../SuntechAPI.php';
 
 
 $options = [
@@ -16,11 +16,6 @@ $options = [
 $suntech = new SuntechAPI($options);
 
 
-$suntech->stc->client->setName('thiago henrique');
-
-
-echo $suntech->stc->client->getName();
-
-print_r($suntech->stc->client->listAll());
+print_r($suntech->listAllClient());
 
 
